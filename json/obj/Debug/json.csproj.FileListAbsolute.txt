@@ -1,0 +1,10 @@
+C:\Users\rvuddanti\source\repos\json\bin\Debug\json.exe.config
+C:\Users\rvuddanti\source\repos\json\bin\Debug\json.exe
+C:\Users\rvuddanti\source\repos\json\bin\Debug\json.pdb
+C:\Users\rvuddanti\source\repos\json\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rvuddanti\source\repos\json\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rvuddanti\source\repos\json\obj\Debug\json.csproj.AssemblyReference.cache
+C:\Users\rvuddanti\source\repos\json\obj\Debug\json.csproj.CoreCompileInputs.cache
+C:\Users\rvuddanti\source\repos\json\obj\Debug\json.csproj.CopyComplete
+C:\Users\rvuddanti\source\repos\json\obj\Debug\json.exe
+C:\Users\rvuddanti\source\repos\json\obj\Debug\json.pdb
