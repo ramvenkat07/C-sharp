@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Arrays",
+    "\\json",
+    "\\TryCatchFinallyExample"
   ],
-  "SelectedNode": "\\C:\\Users\\rvuddanti\\Source\\Repos\\ramvenkat07\\C-sharp",
+  "SelectedNode": "\\Arrays\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
