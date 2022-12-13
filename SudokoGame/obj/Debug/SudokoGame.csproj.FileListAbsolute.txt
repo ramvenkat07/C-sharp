@@ -1,0 +1,7 @@
+C:\Users\rvuddanti\source\repos\SudokoGame\bin\Debug\SudokoGame.exe.config
+C:\Users\rvuddanti\source\repos\SudokoGame\bin\Debug\SudokoGame.exe
+C:\Users\rvuddanti\source\repos\SudokoGame\bin\Debug\SudokoGame.pdb
+C:\Users\rvuddanti\source\repos\SudokoGame\obj\Debug\SudokoGame.csproj.AssemblyReference.cache
+C:\Users\rvuddanti\source\repos\SudokoGame\obj\Debug\SudokoGame.csproj.CoreCompileInputs.cache
+C:\Users\rvuddanti\source\repos\SudokoGame\obj\Debug\SudokoGame.exe
+C:\Users\rvuddanti\source\repos\SudokoGame\obj\Debug\SudokoGame.pdb
