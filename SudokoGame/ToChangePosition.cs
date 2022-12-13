@@ -6,30 +6,32 @@ using System.Threading.Tasks;
 
 namespace SudokoGame
 {
-    class Program
+    class ToChangePosition
     {
-        static int[] MyRandomArray = new int[9];
-       static bool EnteredValu = true;
-        static void dummy() /*Main(string[] args)*/ // while running make this main method.
+        static string[] MyRandomArray = new string[9];
+        static bool EnteredValu = true;
+        static string missing;
+        static void Main(string[] args)
         {
-            while(true)
+            while (true)
             {
-                
-                    if(EnteredValu == true)
-                    {
-                        Console.Clear();
-                        sudokoo();
-                        SudokoPrint();
-                    }
+
+                if (EnteredValu == true)
+                {
+                    Console.Clear();
+                    sudokoo();
+                    SudokoPrint();
+                }
             }
 
         }
         static void sudokoo()
         {
-            int[] sudoko = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
+            string[] sudoko = new string[] { "0","1","2","3","4","5","6","7","8" };
             Random rnd = new Random();
-           MyRandomArray = sudoko.OrderBy(x => rnd.Next()).ToArray();
+            MyRandomArray = sudoko.OrderBy(x => rnd.Next()).ToArray();
+            missing = MyRandomArray[Convert.ToInt32(MyRandomArray[4])];
+            MyRandomArray[Convert.ToInt32(MyRandomArray[4])] = "x";
 
         }
 
@@ -38,20 +40,20 @@ namespace SudokoGame
             EnteredValu = false;
 
             Console.WriteLine("      |      |      |");
-            Console.WriteLine("  {0}   |  {1}   |  {2}   |", MyRandomArray[0] , MyRandomArray[1], MyRandomArray[2]);
+            Console.WriteLine("  {0}   |  {1}   |  {2}   |", MyRandomArray[0], MyRandomArray[1], MyRandomArray[2]);
             Console.WriteLine("______|______|______|");
             Console.WriteLine("      |      |      |");
-            Console.WriteLine("  {0}   |  {1}   |  {2}   |", MyRandomArray[3],"X", MyRandomArray[5]);
+            Console.WriteLine("  {0}   |  {1}   |  {2}   |", MyRandomArray[3], MyRandomArray[4], MyRandomArray[5]);
             Console.WriteLine("______|______|______|");
             Console.WriteLine("      |      |      |");
             Console.WriteLine("  {0}   |  {1}   |  {2}   |", MyRandomArray[6], MyRandomArray[7], MyRandomArray[8]);
             Console.WriteLine("______|______|______|");
 
-            int X = MyRandomArray[4];
+            string X = MyRandomArray[4];
             Console.WriteLine("\n");
-            Console.Write("What is the missing value??  Ans:");
+            Console.Write("What is the missing value(between 0 & 8)??  Ans:");
             int readValue = Convert.ToInt32(Console.ReadLine());
-            if (readValue == X)
+            if (readValue ==Convert.ToInt32(missing))
             {
                 EnteredValu = true;
             }
@@ -65,5 +67,5 @@ namespace SudokoGame
 
         }
     }
-
 }
+
