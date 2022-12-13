@@ -35,8 +35,35 @@ namespace Arrays
             {
                 {1,2},
                 {3,4},
-                {6,7}
+                {5,6}
             };
+
+            int[,] array2d = { { 1, 2 }, { 3, 4 } }; //another way of initialization
+            int[,] aray2d = new int[3, 2]  //another way of initialization
+            {
+                {1,2 },
+                {3,4 },
+                {5,6 }
+            };
+
+
+            for(int i= 0;i< array2D.GetLength(0);i++) // nested for loop
+            {
+                for(int j = 0; j<array2D.GetLength(1);j++)
+                {
+                    array2D[1, 1] = 234;
+                    Console.Write(array2D[i,j]);
+                    Console.Write("  ");
+                }
+                Console.WriteLine("\n");
+            }
+
+            foreach(int item in array2D) // using foreach  (this is super useful to just read the values not for changing or adding liked nested loops)
+            {
+                Console.WriteLine("The items of array are "+item);
+            }
+
+
             Console.WriteLine("The center value is "+array2D[1,0]);
             Console.WriteLine("The length of the array is "+ array2D.Length);
             Console.ReadKey();
