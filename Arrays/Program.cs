@@ -13,23 +13,55 @@ namespace Arrays
 
         static void Main(string[] args)
         {
-            //int[] Markssss = new int[3] { 12, 2, 3 }; // another type of initialization.
-            //int[] Markss = { 1, 23, 24, 22, 23, 33 }; // this is another type.  // Can be only used in main since not using static brfore.
 
-            //Marks[0] = 5;
-            //Marks[1] = 10;
-            //Marks[2] = 12;
-            //Marks[3] = 15;
-            //Marks[4] = 16;// This is one type of initialization.
 
-            //Console.WriteLine("Lenght of an array is " + Marks.Length);
-            //Console.ReadKey();
+
+            //normalArrays();
             //TwoDimensionalArray();
             //ThreeDimensionalArrays();
-            JaggedArray();
+            //JaggedArray();
+
+
+            #region arrays as parameters
+            int[][] ClassGrades = new int[3][];
+            ClassGrades[0] = new int[] { 15, 24, 22, 33 };
+            ClassGrades[1] = new int[] { 23, 33, 33, 22, 1, 2 };
+            ClassGrades[2] = new int[] { 32, 45, 66, 7, 4, 22 };
+            for(int i=0; i<ClassGrades.Length;i++)
+            {
+                double averageResult = GetAverage(ClassGrades[i]);
+                Console.WriteLine("The average result of Class{1} is {0}", averageResult,i+1);
+                
+
+            }
+            Console.ReadKey();
+
+            #endregion
 
         }
 
+
+        #region normal arrays
+        static void normalArrays()
+        {
+            int[] Markssss = new int[3] { 12, 2, 3 }; // another type of initialization.
+            int[] Markss = { 1, 23, 24, 22, 23, 33 }; // this is another type.  // Can be only used in main since not using static brfore.
+
+            Marks[0] = 5;
+            Marks[1] = 10;
+            Marks[2] = 12;
+            Marks[3] = 15;
+            Marks[4] = 16;// This is one type of initialization.
+
+            Console.WriteLine("Lenght of an array is " + Marks.Length);
+            Console.ReadKey();
+
+
+        }
+        #endregion
+
+
+        #region 2D arrays
         static void TwoDimensionalArray()
         {
             int[,] array2D = new int[,]
@@ -69,7 +101,9 @@ namespace Arrays
             Console.WriteLine("The length of the array is " + array2D.Length);
             Console.ReadKey();
         }
+        #endregion
 
+        #region 3D arrays
         static void ThreeDimensionalArrays()
         {
             string[,,] array3D = new string[,,]
@@ -88,7 +122,10 @@ namespace Arrays
             Console.WriteLine("The value of back first row 1 element is " + array3D[1, 1, 0]);
             Console.ReadKey();
         }
+        #endregion
 
+
+        #region jagged arrays
         static void JaggedArray()  // These jagged arrays are called arrays inside arrays
         {
 
@@ -112,15 +149,34 @@ namespace Arrays
             Console.ReadKey();
 
             //alternate way of declaring jagged arrays
-
+            int[] normalarray = new int[] { 2, 2, 2, 2 };
             int[][] jaggedarray2 = new int[][]
             {
                new int[] {1,2,3,4},
-               new int[] {3,4,5,3,3,2 }
+               new int[] {3,4,5,3,3,2 },
+               normalarray // like this we can even include the normal arrays inside a jagged array
             };
 
             Console.WriteLine("the value of 1st middle is {0}", jaggedarray2[0][2]);
             Console.ReadKey();
         }
+        #endregion
+
+        #region arrys as parameters
+
+        static double GetAverage(int[] gradesArray)
+        {
+            int size = gradesArray.Length;
+            double average;
+            int sum = 0;
+
+            for(int i = 0; i<size;i++)
+            {
+                sum += gradesArray[i];
+            }
+            average = (double)sum / size;
+            return average;
+        }
+        #endregion
     }
 }
