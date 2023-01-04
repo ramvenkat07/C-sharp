@@ -1,0 +1,7 @@
+C:\Users\rvuddanti\Desktop\Dummy\bin\Debug\Dummy.exe.config
+C:\Users\rvuddanti\Desktop\Dummy\bin\Debug\Dummy.exe
+C:\Users\rvuddanti\Desktop\Dummy\bin\Debug\Dummy.pdb
+C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.csproj.AssemblyReference.cache
+C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.csproj.CoreCompileInputs.cache
+C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.exe
+C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.pdb
