@@ -5,3 +5,10 @@ C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.csproj.AssemblyReference.cache
 C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.csproj.CoreCompileInputs.cache
 C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.exe
 C:\Users\rvuddanti\Desktop\Dummy\obj\Debug\Dummy.pdb
+C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\Try and catch\bin\Debug\Dummy.exe.config
+C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\Try and catch\bin\Debug\Dummy.exe
+C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\Try and catch\bin\Debug\Dummy.pdb
+C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\Try and catch\obj\Debug\Dummy.csproj.AssemblyReference.cache
+C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\Try and catch\obj\Debug\Dummy.csproj.CoreCompileInputs.cache
+C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\Try and catch\obj\Debug\Dummy.exe
+C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\Try and catch\obj\Debug\Dummy.pdb

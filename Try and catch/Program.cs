@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,8 +24,12 @@ namespace Dummy
                 Console.WriteLine("Please enter a number...");
                 Console.ReadLine();
             }
-
-            Console.WriteLine("Age is " + age);
+            using (StreamWriter sw = File.AppendText(@"C:\DummyFolder\CheckForPenaltyBrakeRequired().txt"))  // here we can use File.AppendText to add data to existing text to create new text file use File.createText.
+            {
+                sw.WriteLine(age);
+               
+            }
+                Console.WriteLine("Age is " + age);
             Console.ReadLine();
         }
     }
