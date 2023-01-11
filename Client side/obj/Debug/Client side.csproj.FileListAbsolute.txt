@@ -1,0 +1,7 @@
+C:\Users\rvuddanti\source\repos\Client side\bin\Debug\Client side.exe.config
+C:\Users\rvuddanti\source\repos\Client side\bin\Debug\Client side.exe
+C:\Users\rvuddanti\source\repos\Client side\bin\Debug\Client side.pdb
+C:\Users\rvuddanti\source\repos\Client side\obj\Debug\Client side.csproj.AssemblyReference.cache
+C:\Users\rvuddanti\source\repos\Client side\obj\Debug\Client side.csproj.CoreCompileInputs.cache
+C:\Users\rvuddanti\source\repos\Client side\obj\Debug\Client side.exe
+C:\Users\rvuddanti\source\repos\Client side\obj\Debug\Client side.pdb
