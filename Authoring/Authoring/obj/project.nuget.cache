@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WTKu2Ys81lm1ftJAZ0rmGin4ykPxZR+8KOseDbDP+ZIOc5+Fxiv6AFShuHA2AGOWDqsjfMRxhJH+qW8jMeqN1w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rvuddanti\\source\\repos\\Authoring\\Authoring\\Authoring.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rvuddanti\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
