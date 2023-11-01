@@ -2,7 +2,7 @@
   "Scenario": {
     "Asset1": {
       "Name": "AutomaticBrake",
-      "Defect": false
+      "Defect": true
     },
     "Asset2": {
       "Name": "Brake",
@@ -14,11 +14,11 @@
     },
     "Asset4": {
       "Name": "PowerThrottle",
-      "Defect": false
+      "Defect": true
     },
     "Asset5": {
       "Name": "Reverser",
-      "Defect": true
+      "Defect": false
     }
   }
 }
