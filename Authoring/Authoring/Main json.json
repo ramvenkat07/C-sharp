@@ -6,15 +6,15 @@
     },
     "Asset2": {
       "Name": "Brake",
-      "Defect": true
+      "Defect": false
     },
     "Asset3": {
       "Name": "DynamicBrake",
-      "Defect": false
+      "Defect": true
     },
     "Asset4": {
       "Name": "PowerThrottle",
-      "Defect": true
+      "Defect": false
     },
     "Asset5": {
       "Name": "Reverser",
