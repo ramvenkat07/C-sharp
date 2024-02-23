@@ -1,24 +1,86 @@
 {
-  "Scenario": {
-    "Asset1": {
-      "Name": "AutomaticBrake",
-      "Defect": true
-    },
-    "Asset2": {
-      "Name": "Brake",
-      "Defect": false
-    },
-    "Asset3": {
-      "Name": "DynamicBrake",
-      "Defect": true
-    },
-    "Asset4": {
-      "Name": "PowerThrottle",
-      "Defect": false
-    },
-    "Asset5": {
-      "Name": "Reverser",
-      "Defect": false
-    }
+  "Automatic Brake": {
+    "Description": "1.Move the handle to ON state",
+    "IncrementalState": [ "ON", "IDLE", "OFF" ],
+    "IncrementalRotationTargets": [ 95, 125 ],
+    "DesiredState": "ON",
+    "arrowPositon": [ -545.9308, -203.6301, -0.3948 ],
+    "Fault": "TRUE",
+    "Defect": true,
+    "NextState": "Independent brake"
+  },
+  "Independent brake": {
+    "Description": "2.Move the handle to ON state",
+    "IncrementalState": [ "ON", "OFF" ],
+    "IncrementalRotationTargets": [ 70 ],
+    "DesiredState": "ON",
+    "arrowPositon": [ -545.9438, -203.8435, -0.4121 ],
+    "Fault": "FALSE",
+    "Defect": true,
+    "NextState": "Air control"
+  },
+  "Air control": {
+    "Description": "3.Push the button to OFF state",
+    "IncrementalState": [ "ON", "OFF" ],
+    "IncrementalRotationTargets": [],
+    "DesiredState": "OFF",
+    "arrowPositon": [ -546.1224, -203.238, -0.3471 ],
+    "Fault": "TRUE",
+    "Defect": true,
+    "NextState": "Dynamic brake"
+  },
+  "Dynamic brake": {
+    "Description": "4.Move the handle to OFF state",
+    "IncrementalState": [ "ON", "OFF" ],
+    "IncrementalRotationTargets": [ 160 ],
+    "DesiredState": "OFF",
+    "arrowPositon": [ -545.757, -203.5965, 0.0446 ],
+    "Fault": "TRUE",
+    "Defect": true,
+    "NextState": "Horn"
+  },
+  "Horn": {
+    "Description": "5.Move the handle to Off state",
+    "IncrementalState": [ "ON", "OFF" ],
+    "IncrementalRotationTargets": [ 320 ],
+    "DesiredState": "OFF",
+    "arrowPositon": [ -545.9565, -203.4095, -0.246 ],
+    "Fault": "TRUE",
+    "Defect": true,
+    "NextState": "Lights"
+  },
+  "Lights": {
+    "Description": "6.Push the button to ON",
+    "IncrementalState": [ "OFF", "ON" ],
+    "IncrementalRotationTargets": [],
+    "DesiredState": "ON",
+    "arrowPositon": [ -546.102, -203.238, -0.2909 ],
+    "Fault": "FALSE",
+    "Defect": true,
+    "NextState": "Power Throttle"
+  },
+  "Power Throttle": {
+    "Description": "6.Move the handle to High state",
+    "IncrementalState": [ "LOW", "IDLE", "HIGH" ],
+    "IncrementalRotationTargets": [ 140, 185 ],
+    "DesiredState": "HIGH",
+    "arrowPositon": [ -545.6359, -203.6722, 0.124 ],
+    "Fault": "FALSE",
+    "Defect": true,
+    "NextState": "Engine"
+  },
+  "Engine": {
+    "Description": "6.Push the button to Off state.",
+    "IncrementalState": [ "ON", "OFF" ],
+    "IncrementalRotationTargets": [],
+    "DesiredState": "OFF",
+    "arrowPositon": [ -546.0498, -203.243, -0.256 ],
+    "Fault": "FALSE",
+    "Defect": true,
+    "NextState": "Completed"
+  },
+  "Completed": {
+    "Description": "End. The inspection is completed.",
+    "arrowPositon": [ -545.9308, -203.6301, -0.3948 ]
   }
 }

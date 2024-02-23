@@ -4,26 +4,16 @@ namespace Authoring
 {
     public partial class Form1 : Form
     {
-        private ComboBox comboBox1;
         private Panel checkboxPanel;
         JsonReader jsonReader = new JsonReader();
         JsonUpdater jsonUpdater = new JsonUpdater();
         public Form1()
         {
             InitializeComponent();
-            //CrateComboBox();
             jsonReader.GetData(); // To Read data from json file and store the data.
             CreateCheckBox();
             AddingData();
 
-        }
-
-        void CrateComboBox()
-        {
-
-            comboBox1 = new ComboBox();
-            comboBox1.Location = new System.Drawing.Point(300, 100);
-            comboBox1.Size = new System.Drawing.Size(200, 25);
         }
 
         void CreateCheckBox()
@@ -31,11 +21,9 @@ namespace Authoring
             // To create Check Box Panel.
             checkboxPanel = new FlowLayoutPanel();
             checkboxPanel.Location = new System.Drawing.Point(700, 185);
-            checkboxPanel.Size = new System.Drawing.Size(100, 400);
+            checkboxPanel.Size = new System.Drawing.Size(50, 500);
             checkboxPanel.BringToFront();
 
-            // Add the ComboBox and Panel to the form
-            this.Controls.Add(comboBox1);
             this.Controls.Add(checkboxPanel);
 
         }
@@ -43,9 +31,11 @@ namespace Authoring
         private void AddTextToFlowLayoutPanel(string text)
         {
             Label label = new Label();
+            label.Size = new System.Drawing.Size(211,26);
             label.Text = text;
 
             // Add the label to the FlowLayoutPanel.
+            flowLayoutPanel1.BringToFront();
             flowLayoutPanel1.Controls.Add(label);
         }
 
@@ -73,11 +63,11 @@ namespace Authoring
                 }
             }
             jsonUpdater.UpdateData(defect);
+
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -47,9 +47,9 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.BackColor = Color.WhiteSmoke;
-            flowLayoutPanel1.Location = new Point(548, 180);
+            flowLayoutPanel1.Location = new Point(447, 180);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(110, 194);
+            flowLayoutPanel1.Size = new Size(211, 214);
             flowLayoutPanel1.TabIndex = 1;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
