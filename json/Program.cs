@@ -13,9 +13,10 @@ namespace json
     {
         static void Main(string[] args)
         {
-            var myJsonString = File.ReadAllText(@"C:\Users\rvuddanti\source\repos\ramvenkat07\C-sharp\json\sample2.json");
+            var myJsonString = File.ReadAllText(@"C:\Users\ramve\Git\C-sharp\json\sample2.json");
             var myJObject = JObject.Parse(myJsonString);
-            Console.WriteLine((string)myJObject.SelectToken("Level1.Title"));
+            Console.WriteLine((string)myJObject.SelectToken("Level2.Title"));
+            Console.WriteLine((string)myJObject.SelectToken("Level2.Child1"));
             Console.ReadLine();
             Console.WriteLine(myJObject.SelectToken(""));
             
