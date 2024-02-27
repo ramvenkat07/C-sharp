@@ -7,7 +7,7 @@ public class PrefabMovement : MonoBehaviour, SpeedInterface
     float speed;
     private void Start()
     {
-        speed = 0.3f;
+        speed = 0.1f;
     }
     void SpeedInterface.ChangeSpeed()
     {
