@@ -15,6 +15,12 @@ namespace json
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
+            var myJsonString = File.ReadAllText(@"C:\Users\ramve\Git\C-sharp\json\sample2.json");
+            var myJObject = JObject.Parse(myJsonString);
+            Console.WriteLine((string)myJObject.SelectToken("Level2.Title"));
+            Console.WriteLine((string)myJObject.SelectToken("Level2.Child1"));
+=======
             string myJsonString = File.ReadAllText(@"C:\Users\rvuddanti\source\repos\C-sharp\json\sample2.json");
             var myJObject = JObject.Parse(myJsonString);
             var scenario = myJObject.SelectToken("Scenario");
@@ -35,6 +41,7 @@ namespace json
                     Console.WriteLine("Defect : false");
                 }
             }
+>>>>>>> 1def10e684757741de50909ef1b0b4886e5a1c7b
             Console.ReadLine();
         }
     }
