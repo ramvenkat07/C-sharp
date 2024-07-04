@@ -10,7 +10,6 @@ public class PrefabMovement : MonoBehaviour, SpeedInterface
     private void Start()
     {
         obstacleInstantiation = gameObject.transform.parent.transform.GetComponent<ObstaclesInstantiation>();
-        //Debug.LogWarning(obstacleInstantiation.gameObject.name);
         speed = 10f;
         StartCoroutine(InitiateCoin());
 
